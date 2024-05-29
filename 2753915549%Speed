@@ -1,0 +1,38 @@
+if game.PlaceId == 2753915549 then
+    taodangosea1 = true
+elseif game.PlaceId == 4442272183 then
+    taodangosea2 = true
+elseif game.PlaceId == 7449423635 then
+    taodangosea3 = true
+else
+    game.Players.LocalPlayer:Kick("Bro, My Script Support Only Blox Fruits and Please Wait Me Update New Game")
+end
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Night Hub",
+	Text = "Carregando...",
+	Icon = "rbxassetid://15541504459"
+})
+wait(3)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Night Hub",
+	Text = "Carregamento Completo",
+	Icon = "rbxassetid://15541504459"
+})
+
+if taodangosea1 then
+    Maretialslist = {"Angel Swings", "Leather", "Magma Ore", "Scrap Metal", "Yeti Fur", "Fish Tail"}
+elseif taodangosea2 then
+    Maretialslist = {"Magma Ore", "Ectoplasm", "Mistic Droplet", "Radioactive Material", "Vampire Fang"}
+elseif taodangosea3 then
+    Maretialslist = {"Fish Tail", "Gunpowder", "Mini Tusk", "Conjured Cocoa", "Dragon Scale"}
+end
+
+if taodangosea1 then
+    BossList = {"The Gorilla King","Bobby","Yeti","Mob Leader","Vice Admiral","Warden","Chief Warden","Swan","Magma Admiral","Fishman Lord","Wysper","Thunder God","Cyborg","Saber Expert"}
+elseif taodangosea2 then
+    BossList = {"Diamond","Jeremy","Fajita","Don Swan","Smoke Admiral","Cursed Captain","Darkbeard","Order","Awakened Ice Admiral","Tide Keeper"}
+elseif taodangosea3 then
+    BossList = {"Stone","Island Empress","Kilo Admiral","Captain Elephant","Beautiful Pirate","rip_indra True Form","Longma","Soul Reaper","Cake Queen"}
+end
+
